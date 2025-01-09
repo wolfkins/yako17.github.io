@@ -1,0 +1,40 @@
+h1{
+    color:#00FFFF;
+    font-family: 'Creepster', cursive;
+    text-shadow:1px 2px blue;
+  }
+  body{
+    text-align:center;
+    background-color:#000000;
+  }
+  IMG{
+    border-style:Solid;
+    Border-color:#FF0000;
+    border-radius:6%;
+    width:250px;
+  }
+  a{
+    color:White;
+  }
+  h3{
+    color:Grey;
+    font-family: 'Bungee Inline', cursive;
+    text-shadow:1px 2px darkgrey;
+  }
+  h2{
+    color:#001FFF;
+    font-family: 'Chewy', cursive;
+    text-shadow:1px 2px Turquoise;
+  }
+  .marginandpadding{
+    margin:10px;
+    padding:4px;
+  }
+  p{
+    color:white;
+  }
+  iframe{
+    border-radius:6%;
+    Border-style:Solid;
+    Border-color:red;
+  }

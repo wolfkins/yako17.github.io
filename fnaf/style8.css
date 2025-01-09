@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+h3{
+  border: 2px solid;
+  background-color: red;
+  padding: 20px;
+  width: 550px;
+}
+
+h2{
+  border: 5px solid purple;
+  background-color: blue;
+  padding: 20px;
+  width: 380px;
+}
+body{
+  background-image: url(https://secure.static.tumblr.com/6f77c4af0310fe0986d8e4d875932b03/agftto8/dlHnd4wgn/tumblr_static_tumblr_static_2rgu8ah40fwgs40k0c44w8wc8_640.png);
+}
+p{
+  color: white;
+}
+.main-header {
+    background: black;
+    border-bottom: 1px solid #222;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: middle;
+    -ms-flex-align: middle;
+    align-items: middle;
+    position: relative;
+    z-index: 11;
+    height: 65px;
+}
+#fazbear{
+  border:5px solid black;
+  background-color: black;
+  color: white;
+}
+#main{
+  border: 2px solid red;
+  background-color: purple;
+  padding: 20px;
+  width: 152px
+}
+a{
+  line-height: 65px;
+    position: relative;
+    font-size: 16px;
+    color: #ACACAC;
+    display: inline-block;
+    margin-right: 10px;
+  font-family: Roboto;
+}
+#p{
+  color: yellow;
+}
+#g{
+  color: #964b28;
+}
+#l{
+  color: skyblue;
+}
+#h{
+  color: red;
+}
+#c{
+  color: purple;
+}
+#custom{
+  display: inline;
+}
