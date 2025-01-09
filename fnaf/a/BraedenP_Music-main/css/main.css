@@ -1,0 +1,757 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+   @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200;400&display=swap');
+
+h1{
+  text-align: center;
+  color: #fff;
+}
+h2{
+  text-align: center;
+  color: #fff;
+}
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: 'Advent Pro', sans-serif;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   @font-face {
+    font-family: 'dalek_pinpointbold';
+    src: url('../font/dalekpinpointbold-lr3e-webfont.woff2') format('woff2'),
+         url('../font/dalekpinpointbold-lr3e-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+  overflow-x: hidden;
+  background-color: #000000;
+}
+
+/* Basic styling for navigation bar */
+
+nav{
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px 2% 0px 2%;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px;
+}
+
+nav ul li{
+  list-style-type: none;
+  margin: 0px 20px 0px 20px;
+}
+
+nav ul li a{
+  color: #FF0000;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav h1{
+  color: #FF0000;
+  font-size: 30px;
+  margin: 0px;
+  text-align: center;
+  position: relative;
+  left: 43%;
+}
+
+nav h1 span{
+  color: #FF0000;
+  font-size: 30px;
+  margin: 0px;
+  text-align: center;
+  font-family: 'dalek_pinpointbold';
+}
+
+/* setting up hero section on homepage */
+
+.hero_home{
+  width: 100vw;
+  height: 530px;
+  background-image: url('../img/Hero2.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+}
+
+.hero_about{
+  width: 100vw;
+  height: 530px;
+  background-image: url('../img/Abour_Hero.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+}
+
+
+/*setting up Tour page*/
+
+.tour_background{
+  background-image: url('../img/Tour_Background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200vh;
+}
+
+.tour_info{
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  flex-direction: row;
+}
+
+.tour_left,
+.tour_right{
+  display: flex;
+  align-items: center;
+  width: 45%;
+  flex-direction: column;
+  margin: 5%;
+  font-size: 20px;
+  color: #fff;
+}
+
+.hero_tour{
+  width: 100vw;
+  height: 530px;
+  background-image: url('../img/tour_background');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+}
+
+.fan_favorite_images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  flex-direction: row;
+}
+
+.fan_favorite_images img{
+  width: 65%;
+  margin: 2%;
+}
+
+
+/*setting up ABOUT page*/
+
+.About{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100vw;
+  background-color: #fff;
+}
+
+.about_content{
+  width: 50%;
+  margin: 2%;
+  color: #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #CABCBC;
+  padding: 2%;
+  font-size: 20px;
+}
+
+.img_about{
+  width: 50%;
+  margin: 2%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img_about img{
+  width: 300px;
+  margin: 2%;
+}
+
+/*setting up MUSIC page*/
+
+.music_videos,
+.new_releases{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.new_releases_images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  flex-direction: row;
+}
+
+.new_releases_images img{
+  width: 25%;
+  margin: 2%;
+}
+
+.horizontal{
+  display: flex;
+  flex-direction: row;
+}
+
+.horizontal img{
+  width: 400px;
+  margin: 2%;
+}
+
+.videos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#img1{
+  border: 30px ;
+  box-shadow: -30px -30px #A8A4A4;
+  padding: 10px;
+}
+
+#img2{
+  border: 30px;
+  box-shadow: -30px 30px #555555;
+  padding: 10px;
+}
+
+#img3{
+  border: 30px;
+  box-shadow: -30px -30px #A12718;
+  padding: 10px;
+}
+
+#img4{
+  border: 20px;
+  box-shadow: 30px 30px #9E5050;
+  padding: 10px;
+}
+
+/* Overlay Info */
+
+.container {
+  position: relative;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 2%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(0%, 0%);
+    text-align: center;
+}
+
+/* Footer Styles */
+
+footer{
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #0D0D0D;
+}
+
+footer h1{
+  color: #FF0000;
+  font-size: 30px;
+}
+
+.leftfooterinfo,
+.rightfooterinfo{
+  width: 15%;
+  height: auto;
+  background-color: #403B3B;
+  border-radius: 20px;
+  color: #000;
+  margin: 0% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftfooterinfo p,
+.rightfooterinfo p{
+  margin: 0 auto;
+}
+
+.Contact_me{
+  color: #FF0000;
+  font-size: 30px;
+  text-align: left;
+}
+
+.Follow_me{
+  color: #FF0000;
+  font-size: 30px;
+  text-align: right;
+}
+/* Media Queries */
+
+@media screen and (max-width: 768px){
+
+nav h1{
+  left: 3%;
+}
+
+  .horizontal{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .new_releases_images{
+    flex-direction: column;
+  }
+
+  .new_releases_images img{
+    width: 50%;
+  }
+
+  .leftfooterinfo, .rightfooterinfo {
+    width: 35%;
+    height: auto;
+    background-color: #403B3B;
+    border-radius: 20px;
+    color: #000;
+    margin: 0% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 320px){
+
+  .new_releases_images img{
+    width: 50%;
+  }
+
+  .horizontal img{
+    width: 80%;
+    margin: 5%;
+  }
+
+  nav {
+    flex-direction: column;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    width: 87%;
+}
+
+  nav h1{
+    font-size: 12px;
+    margin: 5%;
+  }
+
+  .About{
+    flex-direction: column;
+  }
+
+  .about_content{
+    width: 88%;
+    margin: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img_about {
+    display: none;
+}
+
+  #img1{
+    border: 10px ;
+    box-shadow: -10px -10px #A8A4A4;
+    padding: 2px;
+  }
+
+  #img2{
+    border: 10px;
+    box-shadow: -10px 10px #555555;
+    padding: 2px;
+  }
+
+  #img3{
+    border: 10px;
+    box-shadow: -10px -10px #A12718;
+    padding: 2px;
+  }
+
+  #img4{
+    border: 10px;
+    box-shadow: 10px 10px #9E5050;
+    padding: 2px;
+  }
+
+  .tour_info{
+    align-items: unset;
+  }
+
+  .tour_left,
+  .tour_right{
+    font-size: 16px;
+  }
+
+  footer {
+    width: 100vw;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0D0D0D;
+}
+
+.leftfooterinfo, .rightfooterinfo {
+  width: 85%;
+  height: auto;
+  background-color: #403B3B;
+  border-radius: 20px;
+  color: #000;
+  margin: 0% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+
+footer h1 {
+  color: #FF0000;
+  font-size: 30px;
+  margin: 0;
+}
+
+
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
