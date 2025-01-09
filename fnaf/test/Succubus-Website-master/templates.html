@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Templates | Succubus</title>
+<style>body{opacity:0%}</style>
+<link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" media="none" onload="this.media='all'" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" async></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" async></script>
+
+<link rel="stylesheet" href="styles.css" media="none" onload="this.media='all'"/>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="sb-header" href="index.html"><img class="nav-logo" src="succbus-logo.png"/></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			 <li class="nav-item active">
+				<a class="sb-button" href="index.html">Home</a>
+			 </li>
+			 <li class="nav-item">
+				<a class="sb-button" href="about.html">About</a>
+			 </li>
+			 <li class="nav-item dropdown">
+				<a class="sb-button" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Commands
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<h4 class="sb-header">Categories</h4>
+					<a class="sb-button" href="general.html">General</a>
+					<a class="sb-button" href="moderation.html">Moderation</a>
+					<a class="sb-button" href="clubs.html">Ping Clubs</a>
+					<a class="sb-button" href="music.html">Music</a>
+					<a class="sb-button" href="starboard.html">Starboard</a>
+					<a class="sb-button" href="reaction.html">Reaction</a>
+					<a class="sb-button" href="Donator.html">Donator</a>
+				</div>
+			 </li>
+		  </ul>
+		</div>
+	</nav>
+	
+		<div class="container">
+			
+			
+			<h1 class="category-header">Page Title</h1>
+			
+			<div class="alert alert-info">
+				<h4>Extra Information</h4>
+                <hr class="category-header-hr"/>
+				<p>Incase some extra information is needed, this box can be used</p>
+			</div>
+			
+						
+			<div class="alert alert-danger">
+				<h4>Warning</h4>
+                <hr class="category-header-hr"/>
+				<p>Incase something important should be shown, you can use this box</p>
+			</div>
+			
+			<div class="command" id="temp-command">
+				<h3 class="command-header">Command</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">Command <span class="arg">arg</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Command <span class="arg">arg</span> Description</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Permission level</p>
+			</div>
+			
+			<div class="command" id="temp-withnote">
+				<h3 class="command-header">Command With Note</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">Command <span class="arg">arg</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Command <span class="arg">arg</span> Description</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Permission Level</p>
+				<div class="alert alert-info">
+					<h5 class="command-note-header">Note</h5>
+					<hr>
+					<p>Note Text</p>
+				</div>
+			</div>
+						
+			<div class="command" id="temp-withwarning">
+				<h3 class="command-header">Command With Warning</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">Command <span class="arg">arg</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Command <span class="arg">arg</span> Description</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Permission Level</p>
+				<div class="alert alert-danger">
+					<h5 class="command-note-header">Warning</h5>
+					<hr>
+					<p>Note Text</p>
+				</div>
+			</div>
+			
+		</div>
+	
+		<footer>
+			<p class="footer-credit">Website created by Drewcification</p>
+		</footer>
+	</body>
+</html>

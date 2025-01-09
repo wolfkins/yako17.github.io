@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Moderation Commands | Succubus</title>
+<style>body{opacity:0%}</style>
+<link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" media="none" onload="this.media='all'" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" async></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" async></script>
+
+<link rel="stylesheet" href="styles.css" media="none" onload="this.media='all'"/>
+<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="sb-header" href="index.html"><img class="nav-logo" src="succubus-logo.png"/></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			 <li class="nav-item active">
+				<a class="sb-button" href="index.html">Home</a>
+			 </li>
+			 <li class="nav-item">
+				<a class="sb-button" href="about.html">About</a>
+			 </li>
+			 <li class="nav-item dropdown">
+				<a class="sb-button" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Commands
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<h4 class="sb-header">Categories</h4>
+					<a class="sb-button" href="general.html">General</a>
+					<a class="sb-button" href="hololive.html">Hololive</a>
+					<a class="sb-button" href="saucenao.html">SauceNAO</a>
+					<a class="sb-button" href="music.html">Music</a>
+					<a class="sb-button" href="donator.html">Donator</a>
+				</div>
+			 </li>
+			 <li class="nav-item dropdown">
+				<a class="sb-button sb-button-active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Server Tools
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<h4 class="sb-header">Categories</h4>
+						<a class="sb-button sb-button-active" href="moderation.html">Modding</a>
+						<a class="sb-button" href="logging.html">Logging</a>
+						<a class="sb-button" href="welcome.html">Welcome</a>
+						<a class="sb-button" href="clubs.html">Ping Clubs</a>
+						<a class="sb-button" href="reaction.html">Reaction</a>
+						<a class="sb-button" href="starboard.html">Starboard</a>
+					</div>
+			 </li>
+			 <li class = "nav-item">
+				  <a class="sb-button" href="https://discordapp.com/oauth2/authorize?=&client_id=647231754851057674&scope=bot&permissions=2146958583" target="_blank">Invite</a>
+			  </li>
+		  </ul>
+		</div>
+	</nav>
+	
+		<div class="container">
+			
+			
+			<h1 class="category-header">Moderation Commands</h1>
+			
+			<div class="command" id="mod-kick">
+				<h3 class="command-header">Kick</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$kick <span class="arg">user</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Kick the input <span class="arg">user</span> from the server.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Kick Members</p>
+			</div>
+			
+			<div class="command" id="mod-ban">
+				<h3 class="command-header">Ban</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$ban <span class="arg">user</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Ban the input <span class="arg">user</span> from the server.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Ban Members</p>
+			</div>
+			
+			<div class="command" id="mod-ban-id">
+				<h3 class="command-header">Preemtive Ban</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$ban <span class="arg">user id</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Ban the input <span class="arg">user id</span> from the server, even if they are not in the server.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Ban Members</p>
+			</div>
+			
+			<div class="command" id="mod-purge">
+				<h3 class="command-header">Purge</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$purge <span class="arg"># of messages</span> <span class="arg">[user]</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Remove <span class="arg"># of messages</span> from the current channel. If a user is specified, only that user's messages will be deleted.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Messages</p>
+			</div>
+			
+			<div class="command" id="mod-setprefix">
+				<h3 class="command-header">Set Bot Prefix</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$setprefix <span class="arg">prefix</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Set the bot's prefix to the input <span class="arg">prefix</span>. Limited to 5 characters.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Administrator</p>
+			</div>
+			
+			<div class="command" id="mod-setacceptrole">
+				<h3 class="command-header">Set Accept Role</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$accept setrole <span class="arg">role</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Set the <span class="arg">role</span> that is automatically given to users when they join. They will have to $$accept the rules in order to remove it.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Roles</p>
+				<div class="alert alert-info">
+					<h5 class="command-note-header">Note</h5>
+					<hr>
+					<p>Usually, you will explain how to accept the rules in your designated rules channel. (Ex. "Type $$accept to gain access to the rest of the channels!") The user will then type the command in your welcome channel to remove the role. This command assumes you have set up your channel permissions correctly.</p>
+				</div>	
+			</div>
+			
+			<div class="command" id="mod-setacceptmode">
+				<h3 class="command-header">Set Accept Mode</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$accept setmode <span class="arg">remove/add</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Set the mode of the accept, whether it should <span class="arg">add</span> or <span class="arg">remove</span> the accept role when a user accepts the rules.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Roles</p>
+			</div>
+			
+			
+		</div>
+	
+		<footer>
+			<center><p class="footer-credit">Website created by Drewcification</p></center>
+		</footer>
+	</body>
+</html>

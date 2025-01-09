@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Music Commands | Succubus</title>
+<style>body{opacity:0%}</style>
+<link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" media="none" onload="this.media='all'" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" async></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" async></script>
+
+<link rel="stylesheet" href="styles.css" media="none" onload="this.media='all'"/>
+<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="sb-header" href="index.html"><img class="nav-logo" src="succubus-logo.png"/></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			 <li class="nav-item active">
+				<a class="sb-button" href="index.html">Home</a>
+			 </li>
+			 <li class="nav-item">
+				<a class="sb-button" href="about.html">About</a>
+			 </li>
+			 <li class="nav-item dropdown">
+				<a class="sb-button sb-button-active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Commands
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<h4 class="sb-header">Categories</h4>
+					<a class="sb-button" href="general.html">General</a>
+					<a class="sb-button" href="hololive.html">Hololive</a>
+					<a class="sb-button" href="saucenao.html">SauceNAO</a>
+					<a class="sb-button sb-button-active" href="music.html">Music</a>
+					<a class="sb-button" href="donator.html">Donator</a>
+				</div>
+			 </li>
+			 <li class="nav-item dropdown">
+				<a class="sb-button" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Server Tools
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<h4 class="sb-header">Categories</h4>
+						<a class="sb-button" href="moderation.html">Modding</a>
+						<a class="sb-button" href="logging.html">Logging</a>
+						<a class="sb-button" href="welcome.html">Welcome</a>
+						<a class="sb-button" href="clubs.html">Ping Clubs</a>
+						<a class="sb-button" href="reaction.html">Reaction</a>
+						<a class="sb-button" href="starboard.html">Starboard</a>
+					</div>
+			 </li>
+			 <li class = "nav-item">
+				  <a class="sb-button" href="https://discordapp.com/oauth2/authorize?=&client_id=647231754851057674&scope=bot&permissions=2146958583" target="_blank">Invite</a>
+			  </li>
+		  </ul>
+		</div>
+	</nav>
+	
+		<div class="container">
+			
+			
+			<h1 class="category-header">Music Commands</h1>
+			
+			<div class="command" id="music-play">
+			  <h3 class="command-header">Play Song</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$play <span class="arg">query</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Plays the input track from YouTube. If something is currently playing, it will be added to the queue.</p>
+		  </div>
+			
+			<div class="command" id="music-queue">
+			  <h3 class="command-header">Queue</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$queue</p>
+				<h4>Description</h4>
+				<p class="command-description">View the current song queue, as well as the total play duration. Songs are listed in play order.</p>
+		  </div>
+		  
+		  <div class="command" id="music-skip">
+			  <h3 class="command-header">Skip Song</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$skip <span class="arg">[# of songs]</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Skip the specified number of songs. The default is 1 song.</p>
+		  </div>
+		  
+		  <div class="command" id="music-stop">
+			  <h3 class="command-header">Stop Music</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$stop</p>
+				<h4>Description</h4>
+				<p class="command-description">Disconnects the bot from the voice channel and empties the queue.</p>
+		  </div>
+		  
+		  <div class="command" id="music-pause">
+			  <h3 class="command-header">Pause Song</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$pause</p>
+				<h4>Description</h4>
+				<p class="command-description">Pause the current playing song.</p>
+		  </div>
+		  
+		  <div class="command" id="music-resume">
+			  <h3 class="command-header">Resume Song</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$resume</p>
+				<h4>Description</h4>
+				<p class="command-description">Resumes the music, if there is a paused track.</p>
+		  </div>
+		  
+		 
+		  <div class="command" id="music-now">
+			  <h3 class="command-header">Now Playing</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$now</p>
+				<h4>Description</h4>
+				<p class="command-description">View the current playing song, as well as the current song position. Alias $$current</p>
+		  </div>
+		  
+		  <div class="command" id="music-loop">
+			  <h3 class="command-header">Loop Track</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$loop</p>
+				<h4>Description</h4>
+				<p class="command-description">Toggle looping for the current playing track.</p>
+		  </div>
+		  
+		  <div class="command" id="music-shuffle">
+			  <h3 class="command-header">Shuffle Queue</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$shuffle</p>
+				<h4>Description</h4>
+				<p class="command-description">Shuffles the queue. Only works if there are 2 songs or more.</p>
+		  </div>
+		  
+		  <div class="command" id="music-volume">
+			  <h3 class="command-header">Song Volume</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$volume <span class="arg">10-150</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Change the volume of the track. Valid inputs are 10 to 150.</p>
+		  </div>
+		  
+		   <div class="command" id="music-seek">
+			  <h3 class="command-header">Seeking</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$seek <span class="arg">hh:mm:ss</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Seek to a specific timestamp of the current playing track.</p>
+				<div class="alert alert-info">
+					<h5 class="command-note-header">Note</h5>
+					<hr>
+					<p>Timestamp format is hours, minutes, and seconds. Examples: 00:25:32, 01:00:43, 00:03:00</p>
+				</div>
+		  </div>
+		  
+		  <div class="command" id="music-remove">
+			  <h3 class="command-header">Remove Track</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$remove <span class="arg">track number</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Remove a track from the queue.</p>
+		  </div>
+		  
+		  <div class="command" id="music-playlist">
+			  <h3 class="command-header">View Playlists</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$playlist</p>
+				<h4>Description</h4>
+				<p class="command-description">View all of your playlists. Non-donators get 3 playlists, with 15 songs each.</p>
+		  </div>
+			
+		<div class="command" id="music-playlist-create">
+			  <h3 class="command-header">Create Playlist</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$playlist create <span class="arg">name</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Create a new playlist with the given name.</p>
+		  </div>
+		  
+		  <div class="command" id="music-playlist-delete">
+			  <h3 class="command-header">Delete Playlist</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$playlist delete <span class="arg">name</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Delete a playlist.</p>
+		  </div>
+		  
+		   <div class="command" id="music-playlist-add">
+			  <h3 class="command-header">Add a Song to Playlist</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$playlist add <span class="arg">playlist</span> <span class="arg">song</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Searches YouTube and adds the result to the given playlist. Note: If the playlist has spaces, make sure to use quotes.</p>
+		  </div>
+		  
+		  <div class="command" id="music-playlist-remove">
+			  <h3 class="command-header">Remove a Song from Playlist</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$playlist remove <span class="arg">playlist</span> <span class="arg">number</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Remove the song at the input slot in the given playlist. Note: If the playlist has spaces, make sure to use quotes.</p>
+		  </div>
+		  
+		   <div class="command" id="music-playlist-info">
+			  <h3 class="command-header">View Playlist Info</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$playlist info <span class="arg">playlist</span></p>
+				<h4>Description</h4>
+				<p class="command-description">View all songs in a playlist, as well as the total playlist duration.</p>
+		  </div>
+		  
+		  <div class="command" id="music-playlist-play">
+			  <h3 class="command-header">Enqueue/Play Playlist</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$playlist play <span class="arg">playlist</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Play/Enqueue all songs in the given playlist. If there is already a queue, the songs will be added to the end.</p>
+		  </div>
+			
+		</div>
+	
+		<footer>
+			<center><p class="footer-credit">Website created by Drewcification</p></center>
+		</footer>
+</body>
+</html>

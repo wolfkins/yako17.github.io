@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hololive Commands | Succubus</title>
+<style>body{opacity:0%}</style>
+<link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" media="none" onload="this.media='all'" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" async></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" async></script>
+
+<link rel="stylesheet" href="styles.css" media="none" onload="this.media='all'"/>
+<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="sb-header" href="index.html"><img class="nav-logo" src="succubus-logo.png"/></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			 <li class="nav-item active">
+				<a class="sb-button" href="index.html">Home</a>
+			 </li>
+			 <li class="nav-item">
+				<a class="sb-button" href="about.html">About</a>
+			 </li>
+			 <li class="nav-item dropdown">
+				<a class="sb-button sb-button-active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Commands
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<h4 class="sb-header">Categories</h4>
+					<a class="sb-button" href="general.html">General</a>
+					<a class="sb-button sb-button-active" href="hololive.html">Hololive</a>
+					<a class="sb-button" href="saucenao.html">SauceNAO</a>
+					<a class="sb-button" href="music.html">Music</a>
+					<a class="sb-button" href="donator.html">Donator</a>
+				</div>
+			 </li>
+			 <li class="nav-item dropdown">
+				<a class="sb-button" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Server Tools
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<h4 class="sb-header">Categories</h4>
+						<a class="sb-button" href="moderation.html">Modding</a>
+						<a class="sb-button" href="logging.html">Logging</a>
+						<a class="sb-button" href="welcome.html">Welcome</a>
+						<a class="sb-button" href="clubs.html">Ping Clubs</a>
+						<a class="sb-button" href="reaction.html">Reaction</a>
+						<a class="sb-button" href="starboard.html">Starboard</a>
+					</div>
+			 </li>
+			 <li class = "nav-item">
+				  <a class="sb-button" href="https://discordapp.com/oauth2/authorize?=&client_id=647231754851057674&scope=bot&permissions=2146958583" target="_blank">Invite</a>
+			  </li>
+		  </ul>
+		</div>
+	</nav>
+	
+		<div class="container">
+			
+			
+			<h1 class="category-header">Hololive Commands</h1>
+			
+			<div class="command" id="hl-base">
+				<h3 class="command-header">View All Streams</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$hololive</p>
+				<h4>Description</h4>
+				<p class="command-description">View live and upcoming streams for all Hololive VTubers. Data is updated every 5 minutes.</p>
+				<div class="alert alert-info">
+					<h5 class="command-note-header">Note</h5>
+					<hr>
+					<p>The alias $$hl works as well.</p>
+				</div>	
+			</div>
+			
+			<div class="command" id="hl-name">
+				<h3 class="command-header">View Specific VTuber</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$hololive <span class="arg">VTuber</span></p>
+				<h4>Description</h4>
+				<p class="command-description">View data specific to the input <span class="arg">VTuber</span>, such as their status, viewer count, etc.</p>				
+			</div>
+			
+			<div class="command" id="hl-stars">
+				<h3 class="command-header">View Holostars Data</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$hololive holostars</p>
+				<h4>Description</h4>
+				<p class="command-description">View all data for the Holostars section of Hololive.</p>				
+			</div>
+			
+			<div class="command" id="hl-settings">
+				<h3 class="command-header">Hololive Notification Settings</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$hlnotify</p>
+				<h4>Description</h4>
+				<p class="command-description">View the server's settings for the Hololive notifier.</p>				
+			</div>
+			
+			<div class="command" id="hl-setup">
+				<h3 class="command-header">Hololive Notifier Setup</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$hlnotify setup <span class="arg">channel</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Setup Hololive notifications in the given <span class="arg">channel</span>.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>				
+			</div>
+			
+			<div class="command" id="hl-msg">
+				<h3 class="command-header">Hololive Notifier Message</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$hlnotify setmsg</p>
+				<h4>Description</h4>
+				<p class="command-description">Opens a prompt to set a custom message that displays when a VTuber goes live.</p>	
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>
+				<div class="alert alert-info">
+					<h5 class="command-note-header">Note</h5>
+					<hr>
+					<p>The text [vtuberName] and [videoTitle] can be used to insert information about the stream into the message.</p>
+					<br />
+					<p>Example: [vtuberName] has gone live! => Usada Pekora has gone live!</p>
+				</div>	
+			</div>
+			
+			<div class="command" id="hl-add">
+				<h3 class="command-header">Add To Notifier</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$hlnotify add <span class="arg">VTuber</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Adds the specified <span class="arg">VTuber</span> to the notifier. Notifications will be recieved whenever they go live.</p>	
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>				
+			</div>
+			
+			<div class="command" id="hl-remove">
+				<h3 class="command-header">Remove From Notifier</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$hlnotify remove <span class="arg">VTuber</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Removes the specified <span class="arg">VTuber</span> from the notifier.</p>			
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>				
+			</div>
+			
+			<div class="command" id="hl-preview">
+				<h3 class="command-header">Preview Notifier Message</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$hlnotify preview</p>
+				<h4>Description</h4>
+				<p class="command-description">Preview the message that gets displayed whenever a VTuber goes live.</p>	
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>
+			</div>
+			
+			<div class="command" id="hl-personal">
+				<h3 class="command-header">Personal Notifiers</h3>
+				<p class="command-usage">Donators get access to personal Hololive notifiers sent to their Direct Messages. See the <a href="donator.html" target="_blank">Donator</a> page for more information.</p>				
+			</div>
+			
+		</div>
+	
+		<footer>
+			<center><p class="footer-credit">Website created by Drewcification</p></center>
+		</footer>
+	</body>
+</html>

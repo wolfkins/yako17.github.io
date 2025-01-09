@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Starboard Commands | Succubus</title>
+<style>body{opacity:0%}</style>
+<link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" media="none" onload="this.media='all'" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" async></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" async></script>
+
+<link rel="stylesheet" href="styles.css" media="none" onload="this.media='all'"/>
+<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="sb-header" href="index.html"><img class="nav-logo" src="succubus-logo.png"/></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			 <li class="nav-item active">
+				<a class="sb-button" href="index.html">Home</a>
+			 </li>
+			 <li class="nav-item">
+				<a class="sb-button" href="about.html">About</a>
+			 </li>
+			 <li class="nav-item dropdown">
+				<a class="sb-button" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Commands
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<h4 class="sb-header">Categories</h4>
+					<a class="sb-button" href="general.html">General</a>
+					<a class="sb-button" href="hololive.html">Hololive</a>
+					<a class="sb-button" href="saucenao.html">SauceNAO</a>
+					<a class="sb-button" href="music.html">Music</a>
+					<a class="sb-button" href="donator.html">Donator</a>
+				</div>
+			 </li>
+			 <li class="nav-item dropdown">
+				<a class="sb-button sb-button-active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Server Tools
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<h4 class="sb-header">Categories</h4>
+						<a class="sb-button" href="moderation.html">Modding</a>
+						<a class="sb-button" href="logging.html">Logging</a>
+						<a class="sb-button" href="welcome.html">Welcome</a>
+						<a class="sb-button" href="clubs.html">Ping Clubs</a>
+						<a class="sb-button" href="reaction.html">Reaction</a>
+						<a class="sb-button sb-button-active" href="starboard.html">Starboard</a>
+					</div>
+			 </li>
+			 <li class = "nav-item">
+				  <a class="sb-button" href="https://discordapp.com/oauth2/authorize?=&client_id=647231754851057674&scope=bot&permissions=2146958583" target="_blank">Invite</a>
+			  </li>
+		  </ul>
+		</div>
+	</nav>
+	
+		<div class="container">
+			
+			
+			<h1 class="category-header">Starboard Commands</h1>
+			
+			<div class="alert alert-info">
+				<h4>What is Starboard?</h4>
+				<p>Starboard is an alternative to the native Discord pin message system.</p>
+                <hr class="category-header-hr"/>
+				<h5>But if Discord already has a native system, why do we need Starboard?</h5>
+				<p>Starboard has many features that makes it more useful than the native pin system</p>
+				<ul>
+					<li>All starred messages are sent to their own channel</li>
+					<li>There is no limit to the amount of messages that can be starred</li>
+					<li>Messages will be starred after they recieve a specified amount of a reaction emote specified by the server administrators</li>
+					<li>This means you can create a system to allow all users to decide which messages get pinned, but only if the desired count is reached</li>
+				</ul>
+			</div>
+			
+			<div class="command" id="star-sb">
+			  <h3 class="command-header">Starboard Information</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">starboard</p>
+				<h4>Description</h4>
+				<p class="command-description">View the current starboard settings for the server.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>
+				<div class="alert alert-info">
+					<h5 class="command-note-header">Alias</h5>
+					<hr>
+					<p>All commands start with <span class="arg">starboard</span>, or the <span class="arg">sb</span> alias can be used.</p>
+				</div>
+		  </div>
+			
+			<div class="command" id="star-setup">
+				<h3 class="command-header">Starboard Setup</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$sb setup <span class="arg">#channel</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Set the channel for starboard messages to be sent to.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>
+			</div>
+			
+			<div class="command" id="star-setupnsfw">
+				<h3 class="command-header">NSFW Starboard Setup</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$sb setup nsfw <span class="arg">#channel</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Set the channel for NSFW starboard messages to be sent to. If a message is starboarded in an NSFW channel, it will be sent here.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>
+			</div>
+			
+			<div class="command" id="star-setstars">
+				<h3 class="command-header">Starboard Star Count</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$sb setstars <span class="arg">count</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Set the required emote reactions to get onto the starboard.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>
+				<div class="alert alert-danger">
+					<h5 class="command-note-header">Warning</h5>
+					<hr>
+					<p>By default, Discord's message reaction limit per emote is 5000. Make sure your star requirement is not too excessive.</p>
+				</div>
+			</div>
+			
+			<div class="command" id="star-nsfwsetstars">
+				<h3 class="command-header">Starboard NSFW Star Count</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$sb setstars nsfw <span class="arg">count</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Set the required emote reactions to get onto the NSFW starboard.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>
+				<div class="alert alert-danger">
+					<h5 class="command-note-header">Warning</h5>
+					<hr>
+					<p>By default, Discord's message reaction limit per emote is 5000. Make sure your star requirement is not too excessive.</p>
+				</div>
+			</div>
+			
+			<div class="command" id="star-startop">
+				<h3 class="command-header">Starboard Leaderboard</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$sb top <span class="arg">week, month, or alltime</span></p>
+				<h4>Description</h4>
+				<p class="command-description">View the top starboard post for the week, month, or all time top post. Defaults to <span class="arg">alltime</span> if nothing is input.</p>				
+			</div>
+			
+			
+			<div class="command" id="star-setemote">
+				<h3 class="command-header">Starboard Emote</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$sb setemote <span class="arg">emote</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Set the emote that messages have to be reacted to with in order to get onto the starboard. Both Emojis and Custom Emotes work. By default, the starboard uses a star emoji. (⭐)</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>
+				<div class="alert alert-danger">
+					<h5 class="command-note-header">Warning</h5>
+					<hr>
+					<p>If you change the starboard emote with messages already on the starboard, previous starboarded messages will no longer be recognized.</p>
+				</div>
+			</div>
+			
+			<div class="command" id="star-selfstar">
+				<h3 class="command-header">Self-Star Mode</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$sb selfstar <span class="arg">true/false</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Sets whether or not users should be allowed to starboard their own posts. If false, and a user tries to star their own post, it will be removed.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>				
+			</div>
+			
+		</div>
+	
+		<footer>
+			<center><p class="footer-credit">Website created by Drewcification</p></center>
+		</footer>
+</body>
+</html>

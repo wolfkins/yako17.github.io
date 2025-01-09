@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ping Club Commands | Succubus</title>
+<style>body{opacity:0%}</style>
+<link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" media="none" onload="this.media='all'" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" async></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" async></script>
+
+<link rel="stylesheet" href="styles.css" media="none" onload="this.media='all'"/>
+<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="sb-header" href="index.html"><img class="nav-logo" src="succubus-logo.png"/></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			 <li class="nav-item active">
+				<a class="sb-button" href="index.html">Home</a>
+			 </li>
+			 <li class="nav-item">
+				<a class="sb-button" href="about.html">About</a>
+			 </li>
+			 <li class="nav-item dropdown">
+				<a class="sb-button" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Commands
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<h4 class="sb-header">Categories</h4>
+					<a class="sb-button" href="general.html">General</a>
+					<a class="sb-button" href="hololive.html">Hololive</a>
+					<a class="sb-button" href="saucenao.html">SauceNAO</a>
+					<a class="sb-button" href="music.html">Music</a>
+					<a class="sb-button" href="donator.html">Donator</a>
+				</div>
+			 </li>
+			 <li class="nav-item dropdown">
+				<a class="sb-button sb-button-active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Server Tools
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<h4 class="sb-header">Categories</h4>
+						<a class="sb-button" href="moderation.html">Modding</a>
+						<a class="sb-button" href="logging.html">Logging</a>
+						<a class="sb-button" href="welcome.html">Welcome</a>
+						<a class="sb-button sb-button-active" href="clubs.html">Ping Clubs</a>
+						<a class="sb-button" href="reaction.html">Reaction</a>
+						<a class="sb-button" href="starboard.html">Starboard</a>
+					</div>
+			 </li>
+			 <li class = "nav-item">
+				  <a class="sb-button" href="https://discordapp.com/oauth2/authorize?=&client_id=647231754851057674&scope=bot&permissions=2146958583" target="_blank">Invite</a>
+			  </li>
+		  </ul>
+		</div>
+	</nav>
+	
+		<div class="container">
+			
+			
+			<h1 class="category-header">Ping Club Commands</h1>
+			
+			<div class="alert alert-info">
+				<h4>What are Ping Clubs?</h4>
+				<p>A Ping Club is a replacement to regular roles. A Ping Club is like a virtual role, without having to actually make a role.</p>
+                <hr class="category-header-hr"/>
+				<h5>Why do I need this? Isn't a physical role easier?</h5>
+				<p>Yes, however, if you do not want to clog up your server's role list and have to worry about permissions, ping clubs are a nice alternative that are easy to use, for moderators and users.</p>
+				
+			</div>
+			
+			<div class="command" id="club-cmd">
+			  <h3 class="command-header">User Ping Club</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$pingclub <span class="arg">[user]</span></p>
+				<h4>Description</h4>
+				<p class="command-description">View the ping clubs that you or another user are in. Note: All ping club commands also work with the $$pclub alias.</p>
+		  </div>
+			
+			<div class="command" id="club-list">
+			  <h3 class="command-header">List Ping Clubs</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$pingclub list</p>
+				<h4>Description</h4>
+				<p class="command-description">List all ping clubs in the server.</p>
+		  </div>
+		  
+		  <div class="command" id="club-users">
+			  <h3 class="command-header">Ping Club Users</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$pingclub users <span class="arg">club</span> </p>
+				<h4>Description</h4>
+				<p class="command-description">View all users in the given ping club.</p>
+		  </div>
+		  
+		  <div class="command" id="club-add">
+			  <h3 class="command-header">Add Ping Club</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$pingclub add <span class="arg">name</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Create an empty ping club, under the input name. Note: You are only allowed to have up to 10 ping clubs at a time.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Roles</p>
+		  </div>
+		  
+		  <div class="command" id="club-remove">
+			  <h3 class="command-header">Remove Ping Club</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$pingclub remove <span class="arg">name</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Remove a ping club, and all of it's associated users.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Roles</p>
+		  </div>
+		  
+		  <div class="command" id="club-join">
+			  <h3 class="command-header">Join Ping Club</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$pingclub join <span class="arg">name</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Join a ping club. There is no limit as to how many ping clubs a user can join.</p>
+				
+		  </div>
+		  
+		   <div class="command" id="club-leave">
+			  <h3 class="command-header">Leave Ping Club</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$pingclub leave <span class="arg">name</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Leave a ping club.</p>
+				
+		  </div>
+		  
+		   <div class="command" id="club-rename">
+			  <h3 class="command-header">Rename Ping Club</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$pingclub rename <span class="arg">club</span> <span class="arg">new name</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Rename a ping club. Note: If the original club name has spaces, make sure you surround it in quotes.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Roles</p>
+				
+		  </div>
+		  
+		  <div class="command" id="club-mention">
+			  <h3 class="command-header">Mention Ping Club</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$cping <span class="arg">club</span> <span class="arg">[message]</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Mention ALL users in the given ping club with the given message, in the current channel.</p>
+				<div class="alert alert-info">
+					<h5 class="command-note-header">Note</h5>
+					<hr>
+					<p>If there are more than 30 members in a ping club, the bot will provide a warning that must be accepted before the message is sent, to prevent any false pings or abuse.</p>
+				</div>	
+		  </div>
+		  
+		   <div class="command" id="club-mentionchnl">
+			  <h3 class="command-header">Mention Ping Club in a Channel</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$cpingchnl <span class="arg">channel</span> <span class="arg">club</span> <span class="arg">[message]</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Mention ALL users in the given ping club with the given message, in the input channel. Make sure the bot has permissions for said channel.</p>
+				<div class="alert alert-info">
+					<h5 class="command-note-header">Note</h5>
+					<hr>
+					<p>If there are more than 30 members in a ping club, the bot will provide a warning that must be accepted before the message is sent, to prevent any false pings or abuse.</p>
+				</div>	
+		  </div>
+			
+			
+			 <div class="command" id="club-pingmode">
+			  <h3 class="command-header">Ping Club Mention Mode</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$pingclub pingtoggle <span class="arg">club</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Toggle the pingability of a ping club, to whether only moderators can ping clubs to if anyone can. By default, only moderators can ping clubs.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Roles</p>
+				
+		  </div>
+			
+		</div>
+	
+		<footer>
+			<center><p class="footer-credit">Website created by Drewcification</p></center>
+		</footer>
+</body>
+</html>
